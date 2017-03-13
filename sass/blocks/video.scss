@@ -1,0 +1,28 @@
+.video {
+  position: relative;
+  width: 320px;
+  min-height: 267px;
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+.video__control {
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0;
+  width: 280px;
+  height: 111px;
+  left: 50%;
+  margin-left: -140px;
+}
+.video__scroll {
+  width: 280px;
+  height: 45px;
+  background-color: rgba(0,0,0,0.6)
+}
+.video__btn {
+  width: 280px;
+  height: 66px;
+  background-color: #f2f2f2;
+}

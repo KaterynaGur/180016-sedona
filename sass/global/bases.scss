@@ -1,0 +1,31 @@
+body {
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #333333;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+.visually-hidden { 
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; 
+  width: 1px; 
+  margin: -1px;
+  padding: 0;
+  border: 0; 
+}
+.page-wrapper {
+  background: #fff;
+  margin: 0 auto;
+  width: 320px;
+}

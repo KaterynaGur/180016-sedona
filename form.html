@@ -3,38 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>Форма отзыва «Седона»</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="page-wrapper">
     <header class="page-header">
       <h1 class="visually-hidden">Форма отзыва «Седона»</h1>
-      <div class="page-header__logo">
-        <a href="index.html">
-          <img src="http://placehold.it/102x83" width="102" height="83" alt="Логотип Седона">
-        </a>
-      </div>
       <nav class="main-nav  main-nav--close">
         <a href="#" class="main-nav__toggle">Открыть меню</a>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="photo.html">Фото и видео</a>
+              <a class="main-nav__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="main-nav__item  main-nav__item--active">
-              <a>Формa отзыва</a>
+              <a class="main-nav__link main-nav__link--active">Формa отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a href="https://htmlacademy.ru">HTML Academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
         </div>
       </nav>
+      <div class="page-header__logo">
+        <a href="index.html">
+          <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
+        </a>
+      </div>
     </header>
     <main class="page-main">
-      <div class="slogan  slogan--small">
-        <img src="http://placehold.it/229x39" width="229" height="39" alt="Седона">
+      <div class="slogan-small">
+        <img class="slogan-small__image" src="img/text-sedona.svg" width="229" height="39" alt="Седона">
       </div>
       <section class="form-wrapper">
         <header class="form-header">
@@ -46,7 +48,7 @@
             <h2 class="title">Представьтесь:</h2>
             <div class="form__fieldset-item">
               <label class="form__label"><span>Имя<sup>*</sup>:</span>
-                <input class="form__field" type="text" name="name" placeholder="Петр" required autofocus>
+                <input class="form__field" type="text" name="name" placeholder="Петр" required>
               </label>
             </div>
             <div class="form__fieldset-item">
@@ -141,8 +143,8 @@
           <a class="social-link  social-link--youtube" href="#">YouTube</a>
         </div>
         <div class="page-footer__copyright">
-          Разработано:
-          <a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          Разработано
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
     </footer>
@@ -154,7 +156,8 @@
     <div class="popup-success">
       <h2 class="title">Ваш отзыв отправлен!</h2>
       <p class="popup-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="btn  popup-success__close" type="button">Закрыть окно</button>
+      <button class="popup-success__close" type="button">Закрыть окно</button>
+    </div>
     </div>
   </body>
 </html>
