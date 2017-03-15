@@ -8,7 +8,10 @@
   min-height: 223px;
 }
 .main-nav__item {
-  min-height: 56px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #678fa8;
+  box-shadow: inset 0 1px #9ac2db;
   font-family: PT Sans, Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -17,6 +20,12 @@
   background: #81b3d2;
   text-decoration: none;
   text-align: center;
+    &:first-child {
+     box-shadow: none;
+    }
+    &--active {
+      background-color: #669ec0;
+    }
 }
 .main-nav__list,
 .main-nav__list {
@@ -26,9 +35,6 @@
 }
 .main-nav__link {
   color: #ffffff;
-    &--active {
-      color: #766357;
-    }
 }
 .main-nav__toggle {
   position: absolute;

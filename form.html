@@ -10,7 +10,7 @@
     <header class="page-header">
       <h1 class="visually-hidden">Форма отзыва «Седона»</h1>
       <nav class="main-nav  main-nav--close">
-        <a href="#" class="main-nav__toggle">Открыть меню</a>
+        <button class="main-nav__toggle" type="button">Меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -41,95 +41,110 @@
       <section class="form-wrapper">
         <header class="form-header">
           <h2 class="title">Оставьте свой отзыв</h2>
-          <p class="form-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="form-header__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="form__fieldset">
-            <h2 class="title">Представьтесь:</h2>
+            <div class="form__fieldset-wrapper">
+            <h2 class="title title--form">Представьтесь:</h2>
             <div class="form__fieldset-item">
-              <label class="form__label"><span>Имя<sup>*</sup>:</span>
+              <label class="form__label">
+                <span class="form__name">Имя<sup>*</sup>:</span>
                 <input class="form__field" type="text" name="name" placeholder="Петр" required>
               </label>
             </div>
             <div class="form__fieldset-item">
-              <label class="form__label"><span>Фамилия<sup>*</sup>:</span>
+              <label class="form__label">
+                <span class="form__name">Фамилия<sup>*</sup>:</span>
                 <input class="form__field" type="text" name="name" placeholder="Иванов" required>
               </label>
             </div>
             <div class="form__fieldset-item">
-              <label class="form__label"><span>Отчество:</span>
+              <label class="form__label">
+                <span class="form__name">Отчество:</span>
                 <input class="form__field" type="text" name="name" placeholder="Александрович">
               </label>
             </div>
           </div>
+          </div>
           <div class="form__fieldset">
-            <h2 class="title">Контактная информация:</h2>
+            <div class="form__fieldset-wrapper">
+            <h2 class="title title--form">Контактная информация:</h2>
             <div class="form__fieldset-item">
-              <label class="form__label"><span>Контактный телефон<sup>*</sup>:</span>
-                <input class="form__field" type="tel" placeholder="Введите телефон">
+              <label class="form__label form__label--contact">
+                <span class="form__name form__name--contact">Контактный телефон<sup>*</sup>:</span>
+                <input class="form__field form__field--contact" type="tel" placeholder="Введите телефон">
               </label>
               <div class="error">Ошибка, перепроверьте номер</div>
             </div>
-            <div class="form__fieldset-item">
-              <label class="form__label"><span>Электронная почта<sup>*</sup>:</span>
-                <input class="form__field" type="email" placeholder="Введите e-mail">
+            <div class="form__fieldset-item form__fieldset-item--email">
+              <label class="form__label form__label--contact">
+                <span class="form__name form__name--contact">Электронная почта<sup>*</sup>:</span>
+                <input class="form__field form__field--contact" type="email" placeholder="Введите e-mail">
               </label>
             </div>
           </div>
+          </div>
           <div class="form__fieldset">
-            <h2 class="title">Вaше общее впечатление:</h2>
-            <div class="form__fieldset-item">
+            <div class="form__fieldset-wrapper">
+            <h2 class="form__fieldset-title  title  title--form">Вaше общее впечатление:</h2>
+            <div class="form__fieldset-item form__fieldset-item--radio">
               <label class="form__label">
                 <input class="form__radio" type="radio"  name="impression" value="positive" checked>
-                <span>Скорее положительное</span>
+                <span class="form__span  form__span--radio">Скорее положительное</span>
               </label>
             </div>
-            <div class="form__fieldset-item">
+            <div class="form__fieldset-item form__fieldset-item--radio">
               <label class="form__label">
                 <input class="form__radio" type="radio" name="impression" value="negative">
-                <span>Скорее отрицательное</span>
+                <span class="form__span  form__span--radio">Скорее отрицательное</span>
               </label>
             </div>
-            <div class="form__fieldset-item">
+            <div class="form__fieldset-item form__fieldset-item--radio">
               <label class="form__label">
                 <input class="form__radio" type="radio" name="impression" value="neutral">
-                <span>Затрудняюсь ответить</span>
+                <span class="form__span  form__span--radio">Затрудняюсь ответить</span>
               </label>
+            </div>
             </div>
           </div>
           <div class="form__fieldset">
-            <h2 class="title">Посещенные достопримечательности:</h2>
-            <div class="form__fieldset-item">
+            <div class="form__fieldset-wrapper">
+            <h2 class="form__fieldset-name  title  title--form">Посещенные достопримечательности:</h2>
+            <div class="form__fieldset-item  form__fieldset-item--checkbox">
               <label class="form__label">
                 <input class="form__checkbox" type="checkbox" name="bridge" checked>
-                <span>Мост Дьявола</span>
+                <span class="form__span form__span--checkbox">Мост Дьявола</span>
               </label>
             </div>
-            <div class="form__fieldset-item">
+            <div class="form__fieldset-item  form__fieldset-item--checkbox">
               <label class="form__label">
                 <input class="form__checkbox" type="checkbox" name="park" checked>
-                <span>Слайд-парк</span>
+                <span class="form__span form__span--checkbox">Слайд-парк</span>
               </label>
             </div>
-            <div class="form__fieldset-item">
+            <div class="form__fieldset-item  form__fieldset-item--checkbox">
               <label class="form__label">
                 <input class="form__checkbox" type="checkbox" name="mountain">
-                <span>Гора-Колокол</span>
+                <span class="form__span form__span--checkbox">Гора-Колокол</span>
               </label>
             </div>
-            <div class="form__fieldset-item">
+            <div class="form__fieldset-item  form__fieldset-item--checkbox">
               <label class="form__label">
                 <input class="form__checkbox" type="checkbox" name="red-rock" checked>
-                <span>Красные скалы</span>
+                <span class="form__span form__span--checkbox">Красные скалы</span>
               </label>
+            </div>
             </div>
           </div>
           <div class="form__fieldset">
-            <h2 class="title">Опишите свои эмоции:</h2>
+            <div class="form__fieldset-wrapper">
+            <h2 class="title title--form">Опишите свои эмоции:</h2>
             <textarea class="form__comment" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+             </div>
           </div>
           <div class="form__submit">
-            <input class="btn" type="submit" value="Отправить отзыв">
+            <input class="btn btn--form" type="submit" value="Отправить отзыв">
           </div>
         </form>
       </section>
@@ -151,12 +166,16 @@
     <div class="popup-error">
       <h2 class="title">Что-то пошло не так!</h2>
       <p class="popup-error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="btn  popup-error__close" type="button">ОК</button>
+      <button class="btn  btn--popup popup-error__close" type="button">ОК</button>
     </div>
     <div class="popup-success">
-      <h2 class="title">Ваш отзыв отправлен!</h2>
-      <p class="popup-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="popup-success__close" type="button">Закрыть окно</button>
+      <div class="popup-success__header">
+        <h2 class="title">Ваш отзыв отправлен!</h2>
+        <p class="popup-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="popup-success__fill">
+        <button class="btn btn--popup popup-success__close" type="button">Закрыть окно</button>
+      </div>
     </div>
     </div>
   </body>

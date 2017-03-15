@@ -6,6 +6,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 40px;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 28px;
+      width: auto;
+    }
 }
 .slogan__image {
   padding-top: 90px;

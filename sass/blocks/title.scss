@@ -1,0 +1,15 @@
+.title {
+  font-family: PT Sans, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+    &--big {
+      font-size: 21px;
+      line-height: 26px;
+    }
+    &--form {
+      text-align: center;
+      margin: 0;
+    }
+}

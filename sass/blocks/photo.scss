@@ -1,15 +1,18 @@
 .photo {
   border-top: 1px solid #e5e5e5;
-  padding: 23px 0;
+  padding: 23px 0 17px 0;
 }
 .photo:last-child {
   border-bottom: 1px solid #e5e5e5;
 }
+.photo__wrapper {
+  padding: 0 20px;
+}
 .photo__picture {
-  padding-bottom: 13px;
+  padding-bottom: 7px;
 }
 .photo__description {
-  padding-bottom: 11px;
+  padding-bottom: 8px;
   font-family: PT Sans, Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
