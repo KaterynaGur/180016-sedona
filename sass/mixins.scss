@@ -17,7 +17,7 @@
     display: none;
   }
 }
-@mixin placeholder() {
+@mixin placeholder(#000) {
   &::-moz-placeholder {
     color: #000000;
   }

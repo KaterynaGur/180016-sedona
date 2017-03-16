@@ -46,7 +46,7 @@
   font-weight: bold;
   text-transform: none;
   background: $gray-form;
-  @include placeholder();
+  @include placeholder(#000);
     &--contact {
     margin-left: 0;
     box-sizing: border-box;
@@ -136,7 +136,7 @@
   resize: none;
   margin-top: 18px;
   margin-bottom: 20px;
-  @include placeholder();
+  @include placeholder(#000);
 }
 .form__submit {
   padding: 0 20px;
