@@ -1,0 +1,145 @@
+.form__fieldset {
+  border-top: 1px solid #e5e5e5;
+}
+.form__fieldset-wrapper {
+  padding: 18px 20px 27px 20px;
+}
+.form__label {
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+    &--contact {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+}
+.form__name {
+  display: block;
+    &--contact {
+      padding-left: 22px;
+      margin-bottom: 7px;
+    }
+}
+.form__fieldset-item {
+  padding-top: 20px;
+    &--email {
+      padding-top: 11px;
+    }
+    &--radio {
+      padding-top: 13px;
+    }
+    &--checkbox {
+      padding-top: 22px;
+    }
+}
+.form__field {
+  width: 100%;
+  margin-left: 15px;
+  padding-left: 20px;
+  outline: none;
+  text-decoration: none;
+  border: 4px solid $gray-form;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+  background: $gray-form;
+  @include placeholder(#000);
+    &--contact {
+    margin-left: 0;
+    box-sizing: border-box;
+    }
+}
+.form__span {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+  padding-left: 79px;
+  display: flex;
+  align-items: center;
+}
+.form__radio {
+  display: none;
+}
+.form__span--radio {
+  position: relative;
+  min-height: 56px;
+}
+.form__span--radio::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: $gray-form;
+  border: 17px solid $gray-form;
+}
+.form__radio:checked+.form__span--radio::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #333333;
+  border: 17px solid $gray-form;
+}
+.form__checkbox {
+  display: none;
+}
+.form__span--checkbox {
+  position: relative;
+  min-height: 56px;
+}
+.form__span--checkbox::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+  background: $gray-form;
+}
+.form__checkbox:checked+.form__span--checkbox::after {
+  position: absolute;
+  content: "";
+  top: 17px;
+  left: 17px;
+  width: 22px;
+  height: 22px;
+  background: transparent;
+}
+.form__fieldset-title {
+  margin-bottom: 9px;
+}
+.form__comment {
+  min-height: 128px;
+  width: 237px;
+  background: $gray-form;
+  border: 4px solid $gray-form;
+  outline: none;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+  padding: 11px 16px;
+  resize: none;
+  margin-top: 18px;
+  margin-bottom: 20px;
+  @include placeholder(#000);
+}
+.form__submit {
+  padding: 0 20px;
+  text-align: center;
+  margin-bottom: 57px;
+}

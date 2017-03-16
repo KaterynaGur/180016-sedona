@@ -1,0 +1,35 @@
+.photo {
+  border-top: 1px solid #e5e5e5;
+  padding: 23px 0 17px 0;
+}
+.photo:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+.photo__wrapper {
+  padding: 0 20px;
+}
+.photo__picture {
+  padding-bottom: 7px;
+}
+.photo__description {
+  padding-bottom: 8px;
+  font-family: $font;
+  font-size: 14px;
+  line-height: 24px;
+}
+.photo__name {
+  font-weight: bold;
+  color: #000000;
+}
+.photo__author {
+  font-weight: normal;
+  text-transform: none;
+  color: #333333;
+}
+.photo__likes-number {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+}

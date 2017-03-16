@@ -1,0 +1,16 @@
+.popup-success {
+  background: #ffffff;
+  text-align: center;
+  display: none;
+}
+.popup-success__header {
+  padding: 20px 52px 0 52px;
+}
+.popup-success__fill {
+  min-height: 58px;
+  background: $gray-form;
+  padding: 20px 0;
+}
+.popup-success__close {
+  margin: 0 auto;
+}
