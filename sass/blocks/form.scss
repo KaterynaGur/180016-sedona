@@ -46,18 +46,7 @@
   font-weight: bold;
   text-transform: none;
   background: #f2f2f2;
-    &::-moz-placeholder {
-      color: #000000;
-    }
-    &::-webkit-input-placeholder {
-      color: #000000;
-    }
-    &:-moz-placeholder {
-      color: #000000;
-    }
-    &:-ms-input-placeholder {
-      color: #000000;
-    }
+  @include placeholder();
     &--contact {
     margin-left: 0;
     box-sizing: border-box;
@@ -147,22 +136,10 @@
   resize: none;
   margin-top: 18px;
   margin-bottom: 20px;
-    &::-moz-placeholder {
-      color: #000000;
-    }
-    &::-webkit-input-placeholder {
-      color: #000000;
-    }
-    &:-moz-placeholder {
-      color: #000000;
-    }
-    &:-ms-input-placeholder {
-      color: #000000;
-    }
+  @include placeholder();
 }
 .form__submit {
   padding: 0 20px;
   text-align: center;
   margin-bottom: 57px;
-
 }

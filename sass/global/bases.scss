@@ -1,5 +1,5 @@
 body {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: $font;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -14,15 +14,15 @@ a {
   text-decoration: none;
   outline: none;
 }
-.visually-hidden { 
-  position: absolute; 
-  overflow: hidden; 
-  clip: rect(0 0 0 0); 
-  height: 1px; 
-  width: 1px; 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
   margin: -1px;
   padding: 0;
-  border: 0; 
+  border: 0;
 }
 .page-wrapper {
   background: #fff;

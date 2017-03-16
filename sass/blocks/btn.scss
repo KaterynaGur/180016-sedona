@@ -1,10 +1,10 @@
 .btn {
-  min-height: 58px;
   display: block;
   outline: none;
   border: none;
   width: 260px;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: $font;
+  
   font-size: 21px;
   line-height: 26px;
   font-weight: 500;

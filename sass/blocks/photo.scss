@@ -13,7 +13,7 @@
 }
 .photo__description {
   padding-bottom: 8px;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: $font;
   font-size: 14px;
   line-height: 24px;
 }
@@ -27,7 +27,7 @@
   color: #333333;
 }
 .photo__likes-number {
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: $font;
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
