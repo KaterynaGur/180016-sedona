@@ -34,8 +34,10 @@
 }
 .form__field {
   width: 100%;
+  box-sizing: border-box;
   margin-left: 15px;
   padding-left: 20px;
+  padding-right: 20px;
   outline: none;
   text-decoration: none;
   border: 4px solid $gray-form;
@@ -142,4 +144,186 @@
   padding: 0 20px;
   text-align: center;
   margin-bottom: 57px;
+}
+.form__required {
+  display: none;
+}
+@media screen and (min-width: $tablet-widths) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form__fieldset {
+    border-top: none;
+  }
+  .form__fieldset-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .form__fieldset--name {
+    order: 2;
+  }
+  .form__fieldset--name .form__fieldset-wrapper {
+    width: 267px;
+    align-items: center;
+    margin-left: 56px;
+  }
+  .form__fieldset--name .title--form {
+    margin-bottom: 38px;
+  }
+  .form__fieldset--contact {
+    order: 3;
+  }
+  .form__fieldset--contact .form__fieldset-wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 648px;
+    margin-top: 70px;
+    position: relative;
+  }
+  .form__name--contact {
+    margin-top: 4px;
+  }
+  .form__fieldset--impression {
+    order: 1;
+  }
+  .form__fieldset--impression .form__fieldset-wrapper {
+    width: 324px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .form__fieldset--sightseeings {
+    order: 4;
+  }
+  .form__fieldset--sightseeings .form__fieldset-wrapper {
+    width: 583px;
+    margin-top: 53px;
+    margin-left: 65px;
+    flex-direction: row;
+  }
+  .form__fieldset-item--mountain {
+    order: 3;
+  }
+  .form__fieldset-item--park {
+    order: 4;
+  }
+  .form__fieldset-item--red-rock {
+    order: 5;
+  }
+  .form__fieldset-item--checkbox {
+    width: 229px;
+    margin-left: 30px;
+    padding-top: 25px;
+  }
+  .form__fieldset--sightseeings .title--form {
+    padding-right: 184px;
+    padding-left: 119px;
+    margin-bottom: 19px;
+  }
+  .form__fieldset--emotion {
+    order: 5;
+  }
+  .form__fieldset--emotion .form__fieldset-wrapper {
+    width: 648px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 79px;
+  }
+  .form__fieldset--emotion .title--form {
+    padding: 0 196px;
+  }
+  .form__comment {
+    margin-top: 58px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .form__submit {
+    order: 6;
+    width: 648px;
+    padding: 0;
+    margin-top: 69px;
+    margin-bottom: 66px;
+    display: flex;
+    align-items: center;
+  }
+  .form__required {
+    display: block;
+    line-height: 26px;
+    margin-left: auto;
+  }
+  .form__fieldset-title {
+  margin-bottom: 39px;
+  }
+  .form__fieldset-item {
+      &--email {
+        padding-top: 19px;
+      }
+      &--radio {
+        padding-top: 21px;
+      }
+      &--checkbox {
+        padding-top: 22px;
+      }
+  }
+}
+@media screen and (min-width: $desktop-widths) {
+  .form__fieldset--name .form__fieldset-wrapper {
+    width: 400px;
+    margin-left: 80px;
+  }
+  .form__fieldset--name .form__field {
+    
+    box-sizing: border-box;
+  }
+  .form__fieldset--impression .form__fieldset-wrapper {
+    width: 480px;
+  }
+  .form__fieldset--contact .form__fieldset-wrapper {
+    width: 960px;
+    flex-direction: row;
+    margin-top: 67px;
+  }
+  .form__fieldset--contact .title--form {
+    padding: 0 340px;
+    margin-bottom: 54px;
+  }
+  .form__label--contact {
+    flex-direction: row;
+  }
+  .form__fieldset-item--tel {
+    width: 400px;
+  }
+  .form__field--contact {
+    width: 317px;
+    margin-left: 5px;
+  }
+  .form__name--contact {
+    padding-left: 0;
+  }
+  .form__fieldset--contact .form__fieldset-item {
+    width: 480px;
+  }
+  .form__fieldset--sightseeings .form__fieldset-wrapper {
+    width: 960px;
+    margin-left: 0;
+  }
+  .form__fieldset-item--checkbox {
+    width: 240px;
+    margin-left: 0;
+  }
+  .form__fieldset--sightseeings .title--form {
+    padding-right: 340px;
+    padding-left: 340px;
+    margin-bottom: 19px;
+  }
+  .form__fieldset--emotion .form__fieldset-wrapper {
+    width: 960px;
+  }
+  .form__fieldset--emotion .title--form {
+    padding: 0 350px;
+  }
+  .form__submit {
+    width: 960px;
+  }
 }

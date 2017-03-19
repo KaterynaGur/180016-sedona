@@ -13,18 +13,22 @@
         <button class="main-nav__toggle" type="button">Меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
+            <div class="main-nav__list-right">
             <li class="main-nav__item  main-nav__item--active">
               <a class="main-nav__link main-nav__link--active">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="photo.html">Фото и видео</a>
             </li>
+            </div>
+            <div class="main-nav__list-left">
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Формa отзыва</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
+            </div>
           </ul>
         </div>
       </nav>
@@ -39,43 +43,48 @@
       <section class="features">
         <header class="features__header">
           <h2 class="title  visually-hidden">Преимущества «Седоны»</h2>
-          <b class="features__slogan">Седона — небольшой<br> городок в Аризоне, заслуживающий большего!</b>
+          <b class="features__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
           <p class="features__description">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
         </header>
-        <div class="features__item  features__item--blue">
+        <div class="features__blue-block">
+        <div class="features__item  features__item--blue features__item--big">
           <h3 class="features__item-title subtitle subtitle--white">Настоящий городок</h3>
           <span class="features__item-number">— №1 —</span>
           <p class="features__item-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="features__picture">
-          <img src="http://placehold.it/320x260" width="320" height="260" alt="Настоящий городок">
+          <img class="features__img" src="img/photo-city@1x.jpg" height="260" alt="Настоящий городок">
+        </div>
         </div>
         <div class="features__option-wrapper">
-        <div class="features__option">
+        <div class="features__option features__option--motel">
           <h3 class="features__option-title subtitle">Жилье</h3>
           <p class="features__option-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
-        <div class="features__option">
+        <div class="features__option features__option--souvenir">
           <h3 class="features__option-title subtitle">Сувениры</h3>
           <p class="features__option-text">Не только китайского, но и местного производства!</p>
         </div>
-        <div class="features__option">
+        <div class="features__option features__option--food">
           <h3 class="features__option-title subtitle">Еда</h3>
           <p class="features__option-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
         </div>
+        <div class="features__blue-block features__blue-block--second">
         <div class="features__item  features__item--blue">
           <h3 class="features__item-title subtitle subtitle--white">Там есть Мост дьявола</h3>
           <span class="features__item-number">— №2 —</span>
           <p class="features__item-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
         <div class="features__picture">
-          <img src="http://placehold.it/320x260" width="320" height="260" alt="Мост Дьявола">
+          <img class="features__img" src="http://placehold.it/320x260" height="260" alt="Мост Дьявола">
         </div>
+        </div>
+        <div class="features__gray-block">
         <div class="features__item  features__item--gray">
           <h3 class="features__item-title subtitle">Небольшая площадь</h3>
           <span class="features__item-number">— №3 —</span>
-          <p class="features__item-text">Все достопримечательности находятся очень близко</p>
+          <p class="features__item-text">Все достопримеча&shy;тельности находятся очень близко</p>
         </div>
         <div class="features__item  features__item--gray">
           <h3 class="features__item-title subtitle">Красивая дорога</h3>
@@ -86,6 +95,7 @@
           <h3 class="features__item-title subtitle">Мало туристов</h3>
           <span class="features__item-number">— №5 —</span>
           <p class="features__item-text">Большинство едет в гранд каньон и толпится там</p>
+        </div>
         </div>
       </section>
       <div class="find-hotel">

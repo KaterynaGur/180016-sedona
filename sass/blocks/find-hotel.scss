@@ -8,3 +8,31 @@
 .find-hotel__text {
   margin-bottom: 36px;
 }
+@media screen and (min-width: $tablet-widths) {
+  .find-hotel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 18px;
+    padding-bottom: 58px;
+  }
+  .find-hotel__text {
+    padding-left: 165px;
+    padding-right: 165px;
+    margin-top: 6px;
+    margin-bottom: 42px;
+  }
+  .find-hotel .btn {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: $desktop-widths) {
+  .find-hotel {
+    padding-bottom: 66px;
+  }
+  .find-hotel__text {
+    padding-left: 380px;
+    padding-right: 380px;
+    margin-bottom: 47px;
+  }
+}

@@ -2,6 +2,16 @@
   margin-top: 39px;
   margin-bottom: 15px;
 }
-.form-header__description {
-  margin-top: 25px;
+@media screen and (min-width: $tablet-widths) {
+  .form-wrapper {
+    margin-top: 73px;
+    margin-bottom: 15px;
+    padding: 0 60px;
+  }
+}
+@media screen and (min-width: $desktop-widths) {
+  .form-wrapper {
+    padding: 0 120px;
+    margin-top: 110px;
+  }
 }

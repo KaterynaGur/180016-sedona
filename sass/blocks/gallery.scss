@@ -8,3 +8,41 @@
 .gallery__description {
   margin-top: 26px;
 }
+@media screen and (min-width: $tablet-widths) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+  .gallery .title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+  .gallery__header {
+    padding-right: 170px;
+    padding-left: 170px;
+    padding-top: 48px;
+    padding-bottom: 55px;
+  }
+  .gallery__description {
+    margin-top: 31px;
+  }
+  .gallery__photos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 0 60px;
+  }
+}
+@media screen and (min-width: $desktop-widths) {
+  .gallery__header {
+    padding-right: 380px;
+    padding-left: 380px;
+    padding-top: 85px;
+    padding-bottom: 55px;
+  }
+  .gallery__photos {
+    padding: 0;
+  }
+}

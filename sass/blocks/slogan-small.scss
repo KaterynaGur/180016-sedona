@@ -15,3 +15,25 @@
   width: 229px;
   height: 39px;
 }
+@media screen and (min-width: $tablet-widths) {
+  .slogan-small {
+    height: 290px;
+  }
+  .slogan-small__image {
+    padding-top: 95px;
+    padding-bottom: 117px;
+    width: 458px;
+    height: 78px;
+  }
+}
+@media screen and (min-width: $desktop-widths) {
+  .slogan-small {
+    height: 301px;
+  }
+  .slogan-small__image {
+    padding-top: 101px;
+    padding-bottom: 120px;
+    width: 463px;
+    height: 80px;
+  }
+}

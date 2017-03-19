@@ -8,3 +8,16 @@
   padding-left: 22px;
   margin-top: 5px;
 }
+@media screen and (min-width: $tablet-widths) {
+  .error {
+    position: absolute;
+    right: 0;
+    top: 45px;
+  }
+}
+@media screen and (min-width: $desktop-widths) {
+  .error {
+    top: 62px;
+    left: 84px;
+  }
+}

@@ -7,7 +7,15 @@
 }
 @mixin container() {
   width: 320px;
-  max-width: 0 auto;
+  margin: 0 auto;
+  @media screen and (min-width: $tablet-widths) {
+    width: $tablet-widths;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: $desktop-widths) {
+    width: $desktop-widths;
+    margin: 0 auto;
+  }
 }
 @mixin no-outline() {
   outline: none;

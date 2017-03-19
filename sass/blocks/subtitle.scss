@@ -8,3 +8,9 @@
       color: #ffffff;
     }
 }
+@media screen and (min-width: $tablet-widths) {
+  .subtitle {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
