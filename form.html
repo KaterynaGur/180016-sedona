@@ -13,18 +13,22 @@
         <button class="main-nav__toggle" type="button">Меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
+            <div class="main-nav__list-right">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="photo.html">Фото и видео</a>
             </li>
+            </div>
+            <div class="main-nav__list-left">
             <li class="main-nav__item  main-nav__item--active">
               <a class="main-nav__link main-nav__link--active">Формa отзыва</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
+            </div>
           </ul>
         </div>
       </nav>
@@ -40,11 +44,11 @@
       </div>
       <section class="form-wrapper">
         <header class="form-header">
-          <h2 class="title">Оставьте свой отзыв</h2>
+          <h2 class="title title--big">Оставьте свой отзыв</h2>
           <p class="form-header__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="form__fieldset">
+          <div class="form__fieldset form__fieldset--name">
             <div class="form__fieldset-wrapper">
             <h2 class="title title--form">Представьтесь:</h2>
             <div class="form__fieldset-item">
@@ -67,10 +71,10 @@
             </div>
           </div>
           </div>
-          <div class="form__fieldset">
+          <div class="form__fieldset form__fieldset--contact">
             <div class="form__fieldset-wrapper">
             <h2 class="title title--form">Контактная информация:</h2>
-            <div class="form__fieldset-item">
+            <div class="form__fieldset-item form__fieldset-item--tel">
               <label class="form__label form__label--contact">
                 <span class="form__name form__name--contact">Контактный телефон<sup>*</sup>:</span>
                 <input class="form__field form__field--contact" type="tel" placeholder="Введите телефон">
@@ -85,7 +89,7 @@
             </div>
           </div>
           </div>
-          <div class="form__fieldset">
+          <div class="form__fieldset form__fieldset--impression">
             <div class="form__fieldset-wrapper">
             <h2 class="form__fieldset-title  title  title--form">Вaше общее впечатление:</h2>
             <div class="form__fieldset-item form__fieldset-item--radio">
@@ -108,7 +112,7 @@
             </div>
             </div>
           </div>
-          <div class="form__fieldset">
+          <div class="form__fieldset form__fieldset--sightseeings">
             <div class="form__fieldset-wrapper">
             <h2 class="form__fieldset-name  title  title--form">Посещенные достопримечательности:</h2>
             <div class="form__fieldset-item  form__fieldset-item--checkbox">
@@ -117,19 +121,19 @@
                 <span class="form__span form__span--checkbox">Мост Дьявола</span>
               </label>
             </div>
-            <div class="form__fieldset-item  form__fieldset-item--checkbox">
+            <div class="form__fieldset-item  form__fieldset-item--checkbox  form__fieldset-item--park">
               <label class="form__label">
                 <input class="form__checkbox" type="checkbox" name="park" checked>
                 <span class="form__span form__span--checkbox">Слайд-парк</span>
               </label>
             </div>
-            <div class="form__fieldset-item  form__fieldset-item--checkbox">
+            <div class="form__fieldset-item  form__fieldset-item--checkbox  form__fieldset-item--mountain">
               <label class="form__label">
                 <input class="form__checkbox" type="checkbox" name="mountain">
                 <span class="form__span form__span--checkbox">Гора-Колокол</span>
               </label>
             </div>
-            <div class="form__fieldset-item  form__fieldset-item--checkbox">
+            <div class="form__fieldset-item  form__fieldset-item--checkbox  form__fieldset-item--red-rock">
               <label class="form__label">
                 <input class="form__checkbox" type="checkbox" name="red-rock" checked>
                 <span class="form__span form__span--checkbox">Красные скалы</span>
@@ -137,7 +141,7 @@
             </div>
             </div>
           </div>
-          <div class="form__fieldset">
+          <div class="form__fieldset form__fieldset--emotion">
             <div class="form__fieldset-wrapper">
               <h2 class="title title--form">Опишите свои эмоции:</h2>
               <textarea class="form__comment" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
@@ -145,6 +149,7 @@
           </div>
           <div class="form__submit">
             <input class="btn btn--form" type="submit" value="Отправить отзыв">
+            <div class="form__required"><sup>*</sup> — обязательные поля</div>
           </div>
         </form>
       </section>

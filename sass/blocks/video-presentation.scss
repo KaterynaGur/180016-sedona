@@ -9,3 +9,10 @@
 .video-presentation__text {
   margin-top: 26px;
 }
+@media screen and (min-width: $tablet-widths) {
+  .video-presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

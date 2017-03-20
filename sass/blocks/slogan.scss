@@ -24,3 +24,24 @@
   width: 282px;
   height: 214px;
 }
+@media screen and (min-width: $tablet-widths){
+  .slogan {
+    height: 518px;
+    margin-bottom: 49px;
+  }
+  .slogan__image {
+    width: 460px;
+    height: 350px;
+    padding-top: 77px;
+  }
+}
+@media screen and (min-width: $desktop-widths){
+  .slogan {
+    height: 518px;
+  }
+  .slogan__image {
+    width: 460px;
+    height: 350px;
+    padding-top: 77px;
+  }
+}

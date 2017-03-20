@@ -15,3 +15,26 @@
   display: inline-block;
   vertical-align: middle;
 }
+@media screen and (min-width: $tablet-widths) {
+  .page-footer {
+    padding: 0 60px;
+  }
+  .page-footer__wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 36px;
+  }
+  .page-footer__copyright {
+    width: 196px;
+    text-align: right;
+  }
+}
+@media screen and (min-width: $desktop-widths) {
+  .page-footer {
+    padding: 0 120px;
+  }
+  .page-footer__copyright {
+    width: 280px;
+  }
+}
