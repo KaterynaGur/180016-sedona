@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Фото и видео «Седона»</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -51,7 +52,13 @@
         <article class="photo photo--big">
           <div class="photo__wrapper">
           <div class="photo__picture photo__picture--big">
-            <a href="#"><img src="img/photo-1-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы"></a>
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/myphoto1-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/myphoto1-tablet.jpg">
+                <img src="img/photo-1-mobile@1x.jpg" srcset="" alt="Неродные просторы">
+              </picture>
+            </a>
           </div>
           <div class="photo__characteristic">
           <div class="photo__description">
@@ -67,7 +74,13 @@
         <article class="photo">
           <div class="photo__wrapper">
           <div class="photo__picture">
-            <a href="#"><img src="img/photo-2-mobile@1x.jpg" width="280" height="280" alt="Местная растительность"></a>
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/myphoto2-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/myphoto2-tablet.jpg">
+                <img src="img/photo-2-mobile@1x.jpg" srcset="" alt="Местная растительность">
+              </picture>
+            </a>
           </div>
           <div class="photo__characteristic">
           <div class="photo__description">
@@ -83,7 +96,13 @@
         <article class="photo">
           <div class="photo__wrapper">
           <div class="photo__picture">
-            <a href="#"><img src="img/photo-3-mobile@1x.jpg" width="280" height="280" alt="Дорога на север"></a>
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/myphoto3-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/myphoto3-tablet.jpg">
+                <img src="img/photo-3-mobile@1x.jpg" srcset="" alt="Дорога на север">
+              </picture>
+            </a>
           </div>
           <div class="photo__characteristic">
           <div class="photo__description">
@@ -99,7 +118,13 @@
         <article class="photo">
           <div class="photo__wrapper">
           <div class="photo__picture">
-            <a href="#"><img src="img/photo-4-mobile@1x.jpg" width="280" height="280" alt="Мост Дьявола"></a>
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/myphoto4-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/myphoto4-tablet.jpg">
+                <img src="img/photo-4-mobile@1x.jpg" srcset="" alt="Мост Дьявола">
+              </picture>
+            </a>
           </div>
           <div class="photo__characteristic">
           <div class="photo__description">
@@ -116,12 +141,16 @@
       </section>
       <section class="video-presentation">
         <header class="video-presentation__header">
-          <h2 class="title title--big">Все еще сомневаетесь?</h2>
+          <h2 class="title title--video">Все еще сомневаетесь?</h2>
           <p class="video-presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </header>
         <div class="video">
           <div class="video-preview">
-            <img src="img/video-mobile@1x.jpg" width="320" height="201" alt="Видео">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/myvideo-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/myvideo-tablet.jpg">
+              <img src="img/video-mobile@1x.jpg" srcset="" alt="Видео">
+            </picture>
           </div>
           <div class="video__control">
             <div class="video__scroll">
@@ -138,7 +167,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer  page-footer--desktop">
       <div class="page-footer__wrapper">
         <div class="hashtag">#visitsedona</div>
         <div class="social-links">
@@ -146,7 +175,7 @@
           <a class="social-link  social-link--facebook" href="#">Facebook</a>
           <a class="social-link  social-link--youtube" href="#">YouTube</a>
         </div>
-        <div class="page-footer__copyright">
+        <div class="page-footer__copyright  page-footer__copyright--desktop">
           Разработано
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>

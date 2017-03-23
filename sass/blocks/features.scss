@@ -48,12 +48,6 @@
 }
 .features__picture {
   line-height: 0;
-  height: 260px;
-  width: auto;
-  overflow: hidden;
-}
-.features__img {
-  margin-left: -103px;
 }
 .features__item--blue {
   background-color: #81b3d2;
@@ -150,7 +144,7 @@
   .features__option {
     padding-left: 39px;
     padding-right: 39px;
-    padding-top: 156px;
+    padding-top: 160px;
     padding-bottom: 55px;
       &--motel {
         order: 1;
@@ -171,7 +165,7 @@
     width: 256px;
     padding-left: 45px;
     padding-right: 45px;
-    padding-top: 41px;
+    padding-top: 44px;
     padding-bottom: 28px;
       &:after {
         display: none;

@@ -33,8 +33,15 @@
 @media screen and (min-width: $desktop-widths) {
   .page-footer {
     padding: 0 120px;
+      &--desktop {
+        padding-left: 120px;
+        padding-right: 44px;
+      }
   }
   .page-footer__copyright {
     width: 280px;
+  }
+  .page-footer__copyright--desktop {
+    width: 355px;
   }
 }

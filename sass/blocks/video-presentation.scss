@@ -14,5 +14,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 62px;
+  }
+  .video-presentation__header {
+    margin-bottom: 57px;
+  }
+  .video-presentation__text {
+    padding: 0 123px;
+    margin-top: 31px;
+  }
+}
+@media screen and (min-width: $desktop-widths) {
+  .video-presentation__text {
+    padding: 0 340px;
+  }
+  .video-presentation {
+    margin-bottom: 105px;
   }
 }

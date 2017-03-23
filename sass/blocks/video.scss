@@ -13,7 +13,7 @@
   width: 280px;
   height: 111px;
   left: 50%;
-  margin-left: -140px;
+  transform: translateX(-50%);
 }
 .video__scroll {
   width: 280px;
@@ -24,4 +24,34 @@
   width: 280px;
   height: 66px;
   background-color: #f2f2f2;
+}
+@media screen and (min-width: $tablet-widths) {
+  .video {
+    width: 648px;
+    min-height: 500px;
+    line-height: 0;
+  }
+  .video__control {
+    width: 648px;
+    height: 93px;
+  }
+  .video__scroll {
+    width: 648px;
+    height: 93px;;
+
+  }
+  .video__btn {
+    display: none;
+  }
+}
+@media screen and (min-width: $desktop-widths) {
+  .video {
+    width: 800px;
+  }
+  .video__control {
+    width: 800px;
+  }
+  .video__scroll {
+    width: 800px;
+  }
 }

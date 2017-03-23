@@ -14,6 +14,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     flex-grow: 1;
+    margin-bottom: 41px;
   }
   .gallery .title {
     font-size: 30px;
@@ -36,11 +37,14 @@
   }
 }
 @media screen and (min-width: $desktop-widths) {
+  .gallery {
+    margin-bottom: 45px;
+  }
   .gallery__header {
     padding-right: 380px;
     padding-left: 380px;
     padding-top: 85px;
-    padding-bottom: 55px;
+    padding-bottom: 57px;
   }
   .gallery__photos {
     padding: 0;

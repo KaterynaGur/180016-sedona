@@ -137,7 +137,7 @@
   padding: 11px 16px;
   resize: none;
   margin-top: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   @include placeholder(#000);
 }
 .form__submit {
@@ -214,12 +214,12 @@
   .form__fieldset-item--checkbox {
     width: 229px;
     margin-left: 30px;
-    padding-top: 25px;
+    padding-top: 27px;
   }
   .form__fieldset--sightseeings .title--form {
     padding-right: 184px;
     padding-left: 119px;
-    margin-bottom: 19px;
+    margin-bottom: 9px;
   }
   .form__fieldset--emotion {
     order: 5;
@@ -228,7 +228,7 @@
     width: 648px;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-top: 79px;
+    margin-top: 68px;
   }
   .form__fieldset--emotion .title--form {
     padding: 0 196px;
@@ -236,13 +236,14 @@
   .form__comment {
     margin-top: 58px;
     width: 100%;
+    height: 160px;
     box-sizing: border-box;
   }
   .form__submit {
     order: 6;
     width: 648px;
     padding: 0;
-    margin-top: 69px;
+    margin-top: 40px;
     margin-bottom: 66px;
     display: flex;
     align-items: center;
@@ -253,7 +254,7 @@
     margin-left: auto;
   }
   .form__fieldset-title {
-  margin-bottom: 39px;
+    margin-bottom: 39px;
   }
   .form__fieldset-item {
       &--email {
@@ -263,7 +264,7 @@
         padding-top: 21px;
       }
       &--checkbox {
-        padding-top: 22px;
+        padding-top: 32px;
       }
   }
 }
@@ -271,6 +272,9 @@
   .form__fieldset--name .form__fieldset-wrapper {
     width: 400px;
     margin-left: 80px;
+  }
+  .form__fieldset--name .form__fieldset-item {
+    width: 100%;
   }
   .form__fieldset--name .form__field {
     box-sizing: border-box;
@@ -283,19 +287,26 @@
     flex-direction: row;
     margin-top: 67px;
   }
+  .form__fieldset-title {
+    padding-left: 80px;
+  }
   .form__fieldset--contact .title--form {
     padding: 0 340px;
     margin-bottom: 54px;
   }
+  .hidden {
+    display: none;
+  }
   .form__label--contact {
     flex-direction: row;
+    align-items: center;
   }
   .form__fieldset-item--tel {
     width: 400px;
   }
   .form__field--contact {
     width: 317px;
-    margin-left: 5px;
+    margin-left: 17px;
   }
   .form__name--contact {
     padding-left: 0;
@@ -308,13 +319,17 @@
     margin-left: 0;
   }
   .form__fieldset-item--checkbox {
-    width: 240px;
+    width: 205px;
     margin-left: 0;
+    margin-right: 46px;
+      &:last-child {
+        margin-right: 0;
+      }
   }
   .form__fieldset--sightseeings .title--form {
     padding-right: 340px;
     padding-left: 340px;
-    margin-bottom: 19px;
+    margin-bottom: 10px;
   }
   .form__fieldset--emotion .form__fieldset-wrapper {
     width: 960px;
@@ -322,7 +337,12 @@
   .form__fieldset--emotion .title--form {
     padding: 0 350px;
   }
+  .form__comment {
+    margin-top: 56px;
+  }
   .form__submit {
     width: 960px;
+    margin-top: 38px;
+    margin-bottom: 71px;
   }
 }
