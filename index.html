@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -53,7 +54,11 @@
           <p class="features__item-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="features__picture">
-          <img class="features__img" src="img/photo-city@1x.jpg" height="260" alt="Настоящий городок">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/index1-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/index1-tablet.jpg">
+            <img class="features__img" src="img/index1-mobile.jpg" srcset=""  alt="Настоящий городок">
+          </picture>
         </div>
         </div>
         <div class="features__option-wrapper">
@@ -77,7 +82,11 @@
           <p class="features__item-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
         <div class="features__picture">
-          <img class="features__img" src="http://placehold.it/320x260" height="260" alt="Мост Дьявола">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/index2-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/index2-tablet.jpg">
+            <img class="features__img" src="img/index2-mobile.jpg" srcset="" alt="Мост Дьявола">
+          </picture>
         </div>
         </div>
         <div class="features__gray-block">
@@ -105,7 +114,7 @@
       </div>
       <div class="map"></div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--desktop">
       <div class="page-footer__wrapper">
         <div class="hashtag">#visitsedona</div>
         <div class="social-links">
@@ -113,7 +122,7 @@
           <a class="social-link  social-link--facebook" href="#">Facebook</a>
           <a class="social-link  social-link--youtube" href="#">YouTube</a>
         </div>
-        <div class="page-footer__copyright">
+        <div class="page-footer__copyright  page-footer__copyright--desktop">
           Разработано
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
