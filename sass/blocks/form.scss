@@ -5,6 +5,7 @@
   padding: 18px 20px 27px 20px;
 }
 .form__label {
+  position: relative;
   line-height: 26px;
   display: flex;
   align-items: center;
@@ -12,6 +13,24 @@
       flex-direction: column;
       align-items: flex-start;
     }
+}
+.form__label--contact::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #e6e6e6;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 58px;
+  height: 58px;
+  top: 33px;
+  right: 0;
+}
+.form__fieldset-item--tel .form__label--contact::after {
+  background-image: url("../img/icon-phone.svg");
+}
+.form__fieldset-item--email .form__label--contact::after {
+  background-image: url("../img/icon-mail.svg");
 }
 .form__name {
   display: block;
@@ -35,6 +54,7 @@
 .form__field {
   width: 100%;
   box-sizing: border-box;
+  height: 58px;
   margin-left: 15px;
   padding-left: 20px;
   padding-right: 20px;
@@ -53,6 +73,14 @@
     margin-left: 0;
     box-sizing: border-box;
     }
+    &:hover {
+      background: #e5e5e5;
+      border: 4px solid #e5e5e5;
+    }
+    &:focus {
+      background: #ffffff;
+      color: #000000;
+    }
 }
 .form__span {
   font-size: 18px;
@@ -68,7 +96,7 @@
 }
 .form__span--radio {
   position: relative;
-  min-height: 56px;
+  height: 56px;
 }
 .form__span--radio::before {
   position: absolute;
@@ -76,29 +104,37 @@
   top: 0;
   left: 0;
   display: block;
-  width: 22px;
-  height: 22px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   background: $gray-form;
-  border: 17px solid $gray-form;
 }
 .form__radio:checked+.form__span--radio::after {
   position: absolute;
   content: "";
-  top: 0;
-  left: 0;
+  top: 17px;
+  left: 17px;
   width: 22px;
   height: 22px;
   border-radius: 50%;
   background: #333333;
-  border: 17px solid $gray-form;
+}
+.form__label:hover .form__span--radio::before {
+  background: #e5e5e5;
+}
+.form__label:active .form__span--radio::before {
+  background: #d5d5d5;
+}
+.form__label:active .form__span--radio::after {
+  background: #333333;
+  opacity: 0.3;
 }
 .form__checkbox {
   display: none;
 }
 .form__span--checkbox {
   position: relative;
-  min-height: 56px;
+  height: 56px;
 }
 .form__span--checkbox::before {
   position: absolute;
@@ -114,11 +150,31 @@
 .form__checkbox:checked+.form__span--checkbox::after {
   position: absolute;
   content: "";
-  top: 17px;
-  left: 17px;
+  top: 19px;
+  left: 18px;
   width: 22px;
-  height: 22px;
-  background: transparent;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.form__label:hover .form__span--checkbox::before {
+  background: #e5e5e5;
+}
+.form__label:hover .form__span--checkbox::after {
+  background: #e5e5e5;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.form__label:active .form__span--checkbox::before {
+  background: #d5d5d5;
+}
+.form__label:active .form__span--checkbox::after{
+  background: #d5d5d5;
+  background-image: url("../img/icon-tick-active.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .form__fieldset-title {
   margin-bottom: 9px;
@@ -139,6 +195,14 @@
   margin-top: 18px;
   margin-bottom: 19px;
   @include placeholder(#000);
+    &:hover {
+      background: #e5e5e5;
+      border: 4px solid #e5e5e5;
+    }
+    &:focus {
+      background: #ffffff;
+      color: #000000;
+    }
 }
 .form__submit {
   padding: 0 20px;
@@ -163,6 +227,20 @@
   }
   .form__fieldset--name {
     order: 2;
+    position: relative;
+  }
+  .form__fieldset--name .form__fieldset-item {
+    width: 100%;
+  }
+  .form__fieldset--name::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 293px;
+    top: 0;
+    left: 0;
+    background: #dbdbdb;
+    position: absolute;
   }
   .form__fieldset--name .form__fieldset-wrapper {
     width: 267px;
@@ -182,11 +260,46 @@
     margin-top: 70px;
     position: relative;
   }
+  .form__label--contact::after {
+    top: 37px;
+  }
   .form__name--contact {
     margin-top: 4px;
   }
   .form__fieldset--impression {
     order: 1;
+  }
+  .form__fieldset--contact .title--form,
+  .form__fieldset--sightseeings .title--form,
+  .form__fieldset--emotion .title--form {
+    position: relative;
+  }
+  .form__fieldset--contact .title--form::before,
+  .form__fieldset--sightseeings .title--form::before,
+  .form__fieldset--emotion .title--form::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 125px;
+    height: 1px;
+    background: #dbdbdb;
+    top: 50%;
+    left: 0;
+  }
+  .form__fieldset--sightseeings .title--form::before {
+    margin-left: -65px;
+  }
+  .form__fieldset--contact .title--form::after,
+  .form__fieldset--sightseeings .title--form::after,
+  .form__fieldset--emotion .title--form::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 125px;
+    height: 1px;
+    background: #dbdbdb;
+    top: 50%;
+    right: 0;
   }
   .form__fieldset--impression .form__fieldset-wrapper {
     width: 324px;
@@ -282,6 +395,19 @@
   .form__fieldset--impression .form__fieldset-wrapper {
     width: 480px;
   }
+  .form__fieldset--contact .title--form::before,
+  .form__fieldset--sightseeings .title--form::before,
+  .form__fieldset--emotion .title--form::before {
+    width: 280px;
+  }
+  .form__fieldset--contact .title--form::after,
+  .form__fieldset--sightseeings .title--form::after,
+  .form__fieldset--emotion .title--form::after {
+    width: 280px;
+  }
+  .form__fieldset--sightseeings .title--form::before {
+    margin-left: 0;
+  }
   .form__fieldset--contact .form__fieldset-wrapper {
     width: 960px;
     flex-direction: row;
@@ -290,8 +416,19 @@
   .form__fieldset-title {
     padding-left: 80px;
   }
+  .form__fieldset--contact .form__fieldset-item {
+    width: 480px;
+  }
+  .form__fieldset--contact .form__fieldset-item--tel {
+    width: 400px;
+    margin-right: 80px;
+  }
+  .form__label--contact::after {
+    top: 0;
+    right: 0;
+  }
   .form__fieldset--contact .title--form {
-    padding: 0 340px;
+    padding: 0 339px;
     margin-bottom: 54px;
   }
   .hidden {
@@ -306,13 +443,10 @@
   }
   .form__field--contact {
     width: 317px;
-    margin-left: 17px;
+    margin-left: 16px;
   }
   .form__name--contact {
     padding-left: 0;
-  }
-  .form__fieldset--contact .form__fieldset-item {
-    width: 480px;
   }
   .form__fieldset--sightseeings .form__fieldset-wrapper {
     width: 960px;

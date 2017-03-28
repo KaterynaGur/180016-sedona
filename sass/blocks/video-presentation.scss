@@ -1,5 +1,8 @@
 .video-presentation {
-  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 127px;
 }
 .video-presentation__header {
   padding: 0 40px;
@@ -11,9 +14,6 @@
 }
 @media screen and (min-width: $tablet-widths) {
   .video-presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 62px;
   }
   .video-presentation__header {

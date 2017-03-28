@@ -1,4 +1,8 @@
 .gallery {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
   margin-bottom: 33px;
 }
 .gallery__header {
@@ -8,12 +12,14 @@
 .gallery__description {
   margin-top: 26px;
 }
+.gallery__photos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
 @media screen and (min-width: $tablet-widths) {
   .gallery {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex-grow: 1;
     margin-bottom: 41px;
   }
   .gallery .title {
@@ -26,14 +32,12 @@
     padding-top: 48px;
     padding-bottom: 55px;
   }
+  .gallery__photos {
+    flex-direction: row;
+    padding: 0 60px;
+  }
   .gallery__description {
     margin-top: 31px;
-  }
-  .gallery__photos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    padding: 0 60px;
   }
 }
 @media screen and (min-width: $desktop-widths) {
