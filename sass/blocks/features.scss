@@ -58,6 +58,14 @@
 }
 .features__item--big {
   padding-top: 57px;
+  position: relative;
+}
+.features__triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 37px;
 }
 .features__item-title {
   margin-top: 0;
@@ -140,8 +148,8 @@
     padding-left: 45px;
     padding-right: 45px;
   }
-  .features__item--big {
-    padding-top: 53px;
+  .features__triangle {
+    display: none;
   }
   .features__item--big {
     padding-top: 43px;

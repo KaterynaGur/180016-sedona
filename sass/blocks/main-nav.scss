@@ -37,60 +37,29 @@
   padding: 0;
   list-style: none;
 }
-// .page-header__menu-toggle {
-//   position: absolute;
-//   right: 0;
-//   bottom: -50px;
-//   z-index: 2;
-//   display: block;
-//   width: 63px;
-//   height: 44px;
-//   background: transparent;
-//   font-size: 0;
-//   cursor: pointer;
-//   border: none;
-//   outline: none;
-// }
-.main-nav--close .main-nav__item {
-  display: none;
-}
-.main-nav--close .page-header__menu-toggle {
-    right: 0px;
-    bottom: auto;
+@media screen and (max-width: 767px) {
+  .main-nav--close .main-nav__item {
+    display: none;
   }
-// .main-nav--close .page-header__menu-toggle::before {
-//   content: "";
-//   position: absolute;
-//   top: 10px;
-//   left: 20px;
-//   width: 23px;
-//   height: 4px;
-//   background-color: #81b3d2;
-//   box-shadow: 0 8px 0 0 #81b3d2,
-//               0 16px 0 0 #81b3d2;
-// }
-// .main-nav--opened .page-header__menu-toggle {
-//   right: 3px;
-//   top: 6px;
-// }
-// .main-nav--opened .page-header__menu-toggle::before,
-// .main-nav--opened .page-header__menu-toggle::after {
-//   content: "";
-//   position: absolute;
-//   top: 20px;
-//   left: 20px;
-//   width: 28px;
-//   height: 4px;
-//   background-color: #ffffff;
-// }
-// .main-nav--opened .page-header__menu-toggle::before {
-//   transform: rotate(45deg);
-//   box-shadow: none;
-// }
-// .main-nav--opened .page-header__menu-toggle::after {
-//   transform: rotate(-45deg);
-//   box-shadow: none;
-// }
+  .main-nav--opened .main-nav__item {
+    display: block;
+  }
+  .main-nav--nojs .page-header__menu-toggle,
+  .main-nav--nojs .page-header__menu-toggle--close::before,
+  .main-nav--nojs .page-header__menu-toggle--opened {
+    display: none;
+    width: 0;
+    height: 0;
+    cursor: default;
+    z-index: -1;
+  }
+  .main-nav--nojs .page-header__menu-toggle:hover {
+    display: none;
+  }
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
+}
 @media screen and (min-width: $tablet-widths) {
   .main-nav {
     width: auto;
@@ -98,9 +67,6 @@
   .main-nav--close .main-nav__item {
     display: block;
     position: static;
-  }
-   .main-nav--close .main-nav__item {
-    display: block;
   }
   .main-nav__wrapper {
     display: flex;
@@ -158,9 +124,6 @@
       &:active {
         color: rgba(118,99,87,0.3);
       }
-  }
-  .main-nav__toggle {
-    display: none;
   }
 }
 @media screen and (min-width: $desktop-widths) {

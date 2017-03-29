@@ -16,7 +16,7 @@
   .page-header__menu-toggle {
     position: absolute;
     right: 0;
-    bottom: 10px;
+    top: 0;
     z-index: 102;
     display: block;
     width: 63px;
@@ -39,8 +39,8 @@
                 0 16px 0 0 #81b3d2;
   }
   .page-header__menu-toggle {
-    right: 0px;
-    bottom: auto;
+    right: 0;
+    top: 5px;
   }
  .page-header__menu-toggle--opened::before,
  .page-header__menu-toggle--opened::after {
@@ -51,7 +51,7 @@
     left: 20px;
     width: 28px;
     height: 4px;
-    background-color: yellow;
+    background-color: #ffffff;
   }
   .page-header__menu-toggle--opened::before {
     transform: rotate(45deg);
@@ -68,7 +68,6 @@
   }
   .page-header__logo {
     top: 0;
-    bottom: 0;
     width: 102px;
     height: 83px;
   }
