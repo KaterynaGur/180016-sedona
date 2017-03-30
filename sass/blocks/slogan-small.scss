@@ -8,7 +8,7 @@
   background-size: 768px auto;
 }
 @media (min-width: 320px) and (min-resolution: 144dpi),
-       (min-width: 320px) and (min-resolution: 1.5dppx) {
+      (min-width: 320px) and (min-resolution: 1.5dppx) {
   .slogan-small {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
@@ -57,7 +57,7 @@
   }
 }
 @media (min-width: 768px) and (min-resolution: 144dpi),
-       (min-width: 768px) and (min-resolution: 1.5dppx) {
+      (min-width: 768px) and (min-resolution: 1.5dppx) {
   .slogan-small {
     background-image: url("../img/bg-back-tablet@2x.jpg");
   }
@@ -84,7 +84,7 @@
   }
 }
 @media (min-width: 1200px) and (min-resolution: 144dpi),
-       (min-width: 1200px) and (min-resolution: 1.5dppx) {
+      (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .slogan-small {
     background-image: url("../img/bg-back-desktop@2x.jpg");
   }
