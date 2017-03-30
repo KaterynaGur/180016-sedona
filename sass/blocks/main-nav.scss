@@ -44,21 +44,6 @@
   .main-nav--opened .main-nav__item {
     display: block;
   }
-  .main-nav--nojs .page-header__menu-toggle,
-  .main-nav--nojs .page-header__menu-toggle--close::before,
-  .main-nav--nojs .page-header__menu-toggle--opened {
-    display: none;
-    width: 0;
-    height: 0;
-    cursor: default;
-    z-index: -1;
-  }
-  .main-nav--nojs .page-header__menu-toggle:hover {
-    display: none;
-  }
-  .main-nav--nojs .main-nav__item {
-    display: block;
-  }
 }
 @media screen and (min-width: $tablet-widths) {
   .main-nav {

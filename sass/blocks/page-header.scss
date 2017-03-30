@@ -16,9 +16,9 @@
   .page-header__menu-toggle {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 5px;
     z-index: 102;
-    display: block;
+    display: none;
     width: 63px;
     height: 44px;
     background: transparent;
@@ -26,6 +26,9 @@
     cursor: pointer;
     border: none;
     outline: none;
+  }
+  .page-header__menu-toggle--js {
+    display: block;
   }
   .page-header__menu-toggle--close::before {
     content: "";
@@ -37,10 +40,6 @@
     background-color: #81b3d2;
     box-shadow: 0 8px 0 0 #81b3d2,
                 0 16px 0 0 #81b3d2;
-  }
-  .page-header__menu-toggle {
-    right: 0;
-    top: 5px;
   }
  .page-header__menu-toggle--opened::before,
  .page-header__menu-toggle--opened::after {

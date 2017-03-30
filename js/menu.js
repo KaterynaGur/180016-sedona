@@ -1,8 +1,8 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.page-header__menu-toggle');
 
-navMain.classList.remove('main-nav--nojs');
 navMain.classList.add('main-nav--close');
+navToggle.classList.add('page-header__menu-toggle--js');
 
 
 navToggle.addEventListener('click', function() {

@@ -75,12 +75,12 @@
   .photo__description {
     padding-bottom: 8px;
   }
-
   .photo__likes {
     justify-content: flex-end;
   }
   .photo__likes-number {
     padding-right: 9px;
+    padding-top: 0;
   }
   .photo--big .photo__likes-number {
     padding-right: 0;
