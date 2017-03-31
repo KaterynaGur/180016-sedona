@@ -1,19 +1,19 @@
 .video-presentation {
-  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 127px;
 }
 .video-presentation__header {
   padding: 0 40px;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 21px;
 }
 .video-presentation__text {
   margin-top: 26px;
 }
 @media screen and (min-width: $tablet-widths) {
   .video-presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 62px;
   }
   .video-presentation__header {

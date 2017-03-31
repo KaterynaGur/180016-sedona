@@ -5,5 +5,36 @@
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 320px auto;
   margin-bottom: 20px;
+}
+@media (min-width: 320px) and (min-resolution: 144dpi),
+      (min-width: 320px) and (min-resolution: 1.5dppx) {
+  .map {
+    background-image: url("../img/bg-map-mobile@1x.jpg");
+  }
+}
+@media screen and (min-width: $tablet-widths) {
+  .map {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-size: 768px auto;
+  }
+}
+@media (min-width: 768px) and (min-resolution: 144dpi),
+      (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .map {
+    background-image: url("../img/bg-map-tablet@2x.jpg");
+  }
+}
+@media screen and (min-width: $desktop-widths) {
+  .map {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-size: 1200px auto;
+  }
+}
+@media (min-width: 1200px) and (min-resolution: 144dpi),
+      (min-width: 1200px) and (min-resolution: 1.5dppx) {
+  .map {
+    background-image: url("../img/bg-map-desktop@2x.jpg");
+  }
 }

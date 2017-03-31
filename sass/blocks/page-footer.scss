@@ -9,11 +9,27 @@
   font-size: 14px;
   line-height: 26px;
   color: #000000;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .page-footer__copyright-link {
-  display: inline-block;
-  vertical-align: middle;
+  font-size: 0;
+  text-transform: none;
+  color: #000000;
+  line-height: 0;
+  margin-left: 7px;
+}
+.ha-icon {
+  fill: #000000;
+  width: 42px;
+  height: 42px;
+    &:hover {
+      fill: #81b3d2;
+    }
+    &:active {
+      fill: #b2b2b2;
+    }
 }
 @media screen and (min-width: $tablet-widths) {
   .page-footer {
@@ -28,6 +44,7 @@
   .page-footer__copyright {
     width: 196px;
     text-align: right;
+    justify-content: flex-end;
   }
 }
 @media screen and (min-width: $desktop-widths) {

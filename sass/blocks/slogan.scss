@@ -5,16 +5,31 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 768px auto;
   margin-bottom: 40px;
-    &:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      height: 28px;
-      width: auto;
-    }
+}
+.slogan__triangle {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  line-height: 0;
+  font-size: 0;
+}
+.slogan__triangle-mobile {
+  width: 320px;
+  height: 27px;
+}
+.slogan__triangle-tablet {
+  display: none;
+}
+.slogan__triangle-desktop {
+  display: none;
+}
+@media (min-width: 320px) and (min-resolution: 144dpi),
+      (min-width: 320px) and (min-resolution: 1.5dppx) {
+  .slogan {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 .slogan__image {
   padding-top: 90px;
@@ -24,24 +39,60 @@
   width: 282px;
   height: 214px;
 }
-@media screen and (min-width: $tablet-widths){
+@media screen and (min-width: $tablet-widths) {
   .slogan {
     height: 518px;
     margin-bottom: 49px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: 768px auto;
   }
   .slogan__image {
     width: 460px;
     height: 350px;
     padding-top: 77px;
+
+  }
+  .slogan__triangle-mobile {
+    display: none;
+  }
+  .slogan__triangle-tablet {
+    display: block;
+    width: 768px;
+    height: 57px;
+  }
+  .slogan__triangle-desktop {
+    display: none;
   }
 }
-@media screen and (min-width: $desktop-widths){
+@media (min-width: 768px) and (min-resolution: 144dpi),
+      (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .slogan {
+    background-image: url("../img/bg-back-tablet@2x.jpg");
+  }
+}
+@media screen and (min-width: $desktop-widths) {
   .slogan {
     height: 518px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: 1200px auto;
   }
   .slogan__image {
     width: 460px;
     height: 350px;
     padding-top: 77px;
+  }
+  .slogan__triangle-tablet {
+    display: none;
+  }
+  .slogan__triangle-desktop {
+    display: block;
+    width: 1200px;
+    height: 57px;
+  }
+}
+@media (min-width: 1200px) and (min-resolution: 144dpi),
+      (min-width: 1200px) and (min-resolution: 1.5dppx) {
+  .slogan {
+    background-image: url("../img/bg-back-desktop@2x.jpg");
   }
 }

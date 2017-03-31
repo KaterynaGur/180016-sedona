@@ -1,13 +1,34 @@
+.social-link__icon {
+  fill: #fff;
+}
 .social-link {
   display: inline-block;
-  font-size: 14px;
+  font-size: 0;
   margin-right: 6px;
   vertical-align: middle;
   width: 46px;
   height: 48px;
   background-color: $button-background;
-  text-indent: -9999px;
+    &:hover {
+      background-color: #669ec0;
+    }
+    &:active {
+      background-color: #5496bd;
+      fill: #88b6d1;
+    }
 }
 .social-link:last-child {
   margin-right: 0;
+}
+.social-link:active .social-link__icon {
+  fill: #88b6d1;
+}
+.social-link--twitter .social-link__icon {
+  margin-top: 17px;
+}
+.social-link--facebook .social-link__icon {
+  margin-top: 14px;
+}
+.social-link--youtube .social-link__icon {
+  margin-top: 17px;
 }

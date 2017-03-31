@@ -1,57 +1,152 @@
 .video {
   position: relative;
   width: 320px;
-  min-height: 267px;
-  background-position: top;
-  background-repeat: no-repeat;
+  height: 201px;
   background-color: #ffffff;
 }
-.video__control {
+.video__scroll {
   position: absolute;
-  margin: 0 auto;
-  bottom: 0;
+  left: 50%;
+  margin-left: -140px;
+  bottom: -66px;
   width: 280px;
   height: 111px;
-  left: 50%;
-  transform: translateX(-50%);
+  display: block;
+  background-color: rgba(0,0,0,0.6);
 }
-.video__scroll {
-  width: 280px;
-  height: 45px;
-  background-color: rgba(0,0,0,0.6)
-}
-.video__btn {
+.video__scroll::after {
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: 0;
   width: 280px;
   height: 66px;
   background-color: #f2f2f2;
+  z-index: 2;
+}
+.video__scroll-scale {
+  position: absolute;
+  display: block;
+  width: 235px;
+  height: 3px;
+  top: 22px;
+  left: 22px;
+  background-color: rgba(250,250,250,0.2);
+  cursor: pointer;
+}
+.video__scroll-bar {
+  position: absolute;
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  top: -3px;
+  left: 36px;
+  cursor: pointer;
+}
+.video__replay {
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 20px;
+  z-index: 10;
+  top: 69px;
+  left: 25px;
+  cursor: pointer;
+}
+.video__subtitles {
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 20px;
+  z-index: 10;
+  top: 69px;
+  left: 174px;
+  cursor: pointer;
+}
+.video__full-screen {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+  top: 69px;
+  left: 237px;
+  cursor: pointer;
+}
+.icon-video-replay,
+.icon-video-subtitles,
+.icon-video-fullscreen {
+  fill: #5c6870;
+}
+.icon-video-replay:hover,
+.icon-video-subtitles:hover,
+.icon-video-fullscreen:hover {
+  fill: #333333;
+}
+.icon-video-replay:active,
+.icon-video-subtitles:active,
+.icon-video-fullscreen:active {
+  fill: #c1c1c1;
 }
 @media screen and (min-width: $tablet-widths) {
   .video {
+    position: relative;
     width: 648px;
     min-height: 500px;
     line-height: 0;
   }
-  .video__control {
-    width: 648px;
-    height: 93px;
-  }
   .video__scroll {
     width: 648px;
-    height: 93px;;
-
+    height: 93px;
+    margin-left: 0;
+    left: 0;
+    bottom: 0;
   }
-  .video__btn {
+  .video__scroll::after {
     display: none;
+  }
+  .video__scroll-scale {
+    width: 390px;
+    top: 45px;
+    left: 93px;
+  }
+  .video__scroll-bar {
+    left: 113px;
+  }
+  .icon-video-replay,
+  .icon-video-subtitles,
+  .icon-video-fullscreen {
+    fill: #ffffff;
+  }
+  .video__replay {
+    top: 36px;
+    left: 35px;
+  }
+  .video__subtitles {
+    top: 36px;
+    left: 524px;
+  }
+  .video__full-screen {
+    top: 36px;
+    left: 587px;
   }
 }
 @media screen and (min-width: $desktop-widths) {
   .video {
     width: 800px;
   }
-  .video__control {
-    width: 800px;
-  }
   .video__scroll {
     width: 800px;
+  }
+  .video__scroll-scale {
+    width: 540px;
+  }
+  .video__subtitles {
+    left: 674px;
+  }
+  .video__full-screen {
+    left: 739px;
   }
 }
