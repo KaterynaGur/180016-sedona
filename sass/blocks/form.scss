@@ -97,6 +97,7 @@
 .form__span--radio {
   position: relative;
   height: 56px;
+  pointer-events: none;
 }
 .form__span--radio::before {
   position: absolute;
@@ -135,6 +136,7 @@
 .form__span--checkbox {
   position: relative;
   height: 56px;
+  pointer-events: none;
 }
 .form__span--checkbox::before {
   position: absolute;
