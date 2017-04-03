@@ -9,10 +9,10 @@
   line-height: 26px;
   display: flex;
   align-items: center;
-    &--contact {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+  &--contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .form__label--contact::after {
   content: "";
@@ -34,22 +34,22 @@
 }
 .form__name {
   display: block;
-    &--contact {
-      padding-left: 22px;
-      margin-bottom: 7px;
-    }
+  &--contact {
+    padding-left: 22px;
+    margin-bottom: 7px;
+  }
 }
 .form__fieldset-item {
   padding-top: 20px;
-    &--email {
-      padding-top: 11px;
-    }
-    &--radio {
-      padding-top: 13px;
-    }
-    &--checkbox {
-      padding-top: 22px;
-    }
+  &--email {
+    padding-top: 11px;
+  }
+  &--radio {
+    padding-top: 13px;
+  }
+  &--checkbox {
+    padding-top: 22px;
+  }
 }
 .form__field {
   width: 100%;
@@ -69,18 +69,18 @@
   text-transform: none;
   background: $gray-form;
   @include placeholder(#000);
-    &--contact {
+  &--contact {
     margin-left: 0;
     box-sizing: border-box;
-    }
-    &:hover {
-      background: #e5e5e5;
-      border: 4px solid #e5e5e5;
-    }
-    &:focus {
-      background: #ffffff;
-      color: #000000;
-    }
+  }
+  &:hover {
+    background: #e5e5e5;
+    border: 4px solid #e5e5e5;
+  }
+  &:focus {
+    background: #ffffff;
+    color: #000000;
+  }
 }
 .form__span {
   font-size: 18px;
@@ -197,14 +197,14 @@
   margin-top: 18px;
   margin-bottom: 19px;
   @include placeholder(#000);
-    &:hover {
-      background: #e5e5e5;
-      border: 4px solid #e5e5e5;
-    }
-    &:focus {
-      background: #ffffff;
-      color: #000000;
-    }
+  &:hover {
+    background: #e5e5e5;
+    border: 4px solid #e5e5e5;
+  }
+  &:focus {
+    background: #ffffff;
+    color: #000000;
+  }
 }
 .form__submit {
   padding: 0 20px;
@@ -372,15 +372,15 @@
     margin-bottom: 39px;
   }
   .form__fieldset-item {
-      &--email {
-        padding-top: 19px;
-      }
-      &--radio {
-        padding-top: 21px;
-      }
-      &--checkbox {
-        padding-top: 32px;
-      }
+    &--email {
+      padding-top: 19px;
+    }
+    &--radio {
+      padding-top: 21px;
+    }
+    &--checkbox {
+      padding-top: 32px;
+    }
   }
 }
 @media screen and (min-width: $desktop-widths) {
@@ -458,9 +458,9 @@
     width: 205px;
     margin-left: 0;
     margin-right: 46px;
-      &:last-child {
-        margin-right: 0;
-      }
+    &:last-child {
+      margin-right: 0;
+    }
   }
   .form__fieldset--sightseeings .title--form {
     padding-right: 340px;

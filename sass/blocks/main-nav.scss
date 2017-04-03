@@ -16,21 +16,21 @@
   background: #81b3d2;
   text-decoration: none;
   text-align: center;
-    &:first-child {
-      box-shadow: none;
-    }
-    &:hover {
-      background: #669ec0;
-    }
-    &:active {
-      background: #5496bd;
-    }
+  &:first-child {
+    box-shadow: none;
+  }
+  &:hover {
+    background: #669ec0;
+  }
+  &:active {
+    background: #5496bd;
+  }
 }
 .main-nav__link {
   color: #ffffff;
-    &:active {
-      color: rgba(250,250,250,0.3);
-    }
+  &:active {
+    color: rgba(250,250,250,0.3);
+  }
 }
 .main-nav__list {
   margin: 0;
@@ -103,12 +103,12 @@
   }
   .main-nav__item--active .main-nav__link {
     color: rgba(118,99,87,1);
-      &:hover {
-        color: rgba(96,78,67,1);
-      }
-      &:active {
-        color: rgba(118,99,87,0.3);
-      }
+    &:hover {
+      color: rgba(96,78,67,1);
+    }
+    &:active {
+      color: rgba(118,99,87,0.3);
+    }
   }
 }
 @media screen and (min-width: $desktop-widths) {

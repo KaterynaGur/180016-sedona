@@ -4,20 +4,20 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
-    &--big {
-      font-size: 21px;
-      line-height: 26px;
-    }
-    &--form {
-      text-align: center;
-      margin: 0;
-    }
+  &--big {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  &--form {
+    text-align: center;
+    margin: 0;
+  }
 }
 @media screen and (min-width: $tablet-widths) {
   .title {
     &--big {
-    font-size: 30px;
-    line-height: 26px;
+      font-size: 30px;
+      line-height: 26px;
     }
     &--form {
       font-size: 21px;
