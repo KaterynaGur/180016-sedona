@@ -5,9 +5,9 @@
   line-height: 26px;
   color: #000000;
   font-weight: bold;
-    &--white {
-      color: #ffffff;
-    }
+  &--white {
+    color: #ffffff;
+  }
 }
 @media screen and (min-width: $tablet-widths) {
   .subtitle {

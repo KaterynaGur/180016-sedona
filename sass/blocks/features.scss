@@ -33,18 +33,18 @@
   position: relative;
   min-height: 167px;
   box-sizing: border-box;
-    &:after {
-      position: absolute;
-      content: "";
-      width: 280px;
-      height: 1px;
-      background: #d6d6d6;
-      bottom: 0;
-      left: 20px;
-    }
-    &:last-child:after {
-      display: none;
-    }
+  &:after {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 1px;
+    background: #d6d6d6;
+    bottom: 0;
+    left: 20px;
+  }
+  &:last-child:after {
+    display: none;
+  }
 }
 .features__picture {
   line-height: 0;
@@ -171,15 +171,15 @@
     padding-right: 39px;
     padding-top: 160px;
     padding-bottom: 55px;
-      &--motel {
-        order: 1;
-      }
-      &--souvenir {
-        order: 3;
-      }
-      &--food {
-        order: 2;
-      }
+    &--motel {
+      order: 1;
+    }
+    &--souvenir {
+      order: 3;
+    }
+    &--food {
+      order: 2;
+    }
   }
   .features__option--motel .features__icon {
     width: 75px;
@@ -210,9 +210,9 @@
     padding-right: 45px;
     padding-top: 44px;
     padding-bottom: 28px;
-      &:after {
-        display: none;
-      }
+    &:after {
+      display: none;
+    }
   }
   .features__item--gray .features__item-title {
     padding-left: 15px;

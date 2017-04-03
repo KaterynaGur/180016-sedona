@@ -10,13 +10,13 @@
   width: 46px;
   height: 48px;
   background-color: $button-background;
-    &:hover {
-      background-color: #669ec0;
-    }
-    &:active {
-      background-color: #5496bd;
-      fill: #88b6d1;
-    }
+  &:hover {
+    background-color: #669ec0;
+  }
+  &:active {
+    background-color: #5496bd;
+    fill: #88b6d1;
+  }
 }
 .social-link:last-child {
   margin-right: 0;
